@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+	body {
+		@apply bg-twitter-bg;
+	}
+}
+
+/* creating this so we can just pick up the class and apply to every other component that needs the style */
+@layer components {
+	.hoverStyle {
+		@apply hover:bg-gray-500 hover:bg-opacity-20 rounded-full cursor-pointer w-[50px] h-[50px] xl:w-auto xl:h-auto
+		xl:py-3 xl:px-4 transition duration-200 ease-out
+	}
+}
