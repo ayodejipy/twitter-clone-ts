@@ -2,6 +2,7 @@ import Image from "next/image"
 
 // component
 import SidebarLink from "./Elements/SidebarLink"
+import UserPicture from "../User/UserIcon";
 
 import { HomeIcon } from "@heroicons/react/solid";
 import {
@@ -38,11 +39,8 @@ function Sidebar() {
 			</button>
 			
 			<div className="text-twitter-gray flex items-center sm:justify-center justify-start hoverStyle xl:-mr-5 mt-auto">
-				<img 
-					src="https://www.kindpng.com/picc/m/151-1514720_dk-metcalf-headshot-png-transparent-png.png" 
-					alt="user"
-					className="h-10 w-10 rounded-full xl:mr-2.5"
-				/>
+				<UserPicture />
+				
 				<div className="hidden xl:inline leading-6">
 					<h4 className="font-bold">AYO DEJI</h4>
 					<p className="text-[#6e767d]">@ayodejipy_</p>

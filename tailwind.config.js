@@ -9,6 +9,7 @@ module.exports = {
 			twitter: {
 				bg: '#15202B',
 				button: '#7856ff',
+				icon: '#7856ff',
 				gray: '#d9d9d9',
 			}
 		}
